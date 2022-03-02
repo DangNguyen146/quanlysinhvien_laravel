@@ -1,0 +1,37 @@
+.pagenotfound{
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    min-height: 65vh;
+    margin-top: 50px;
+    .pagenotfound-chu{
+        position: relative;
+        h1{
+            font-family: 'Anton', sans-serif;
+            font-size: 15rem;
+            letter-spacing: 6px;
+        }
+        .pagenotfound-image{
+            position: absolute;
+            bottom: 0;
+            width: 20%;
+            left: 40%;
+            animation:  pulse 3s ease infinite alternate, nudge 5s linear infinite alternate;
+            @keyframes nudge { 0%, 100% {transform: translate(0, 0);}50% {transform: translate(50px, 0);}80% {transform: translate(-50px, 0);}
+            }
+        }
+    }
+    
+}
+@media (max-width: 768px) { 
+    .pagenotfound{
+        min-height: 35vh;
+        .pagenotfound-chu{
+            h1{
+                font-size: 9rem;
+            }
+            .pagenotfound-image{
+                width: 35%;
+                left: 30%;
+            }
+        }
+    }
+}

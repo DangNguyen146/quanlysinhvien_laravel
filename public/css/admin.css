@@ -1,0 +1,217 @@
+:root {
+    --white: white;
+    --black: #131417;
+    --gray: #fafafa;
+    --colortext: #4f4f4f;
+    --colortextprimary: #5f4b8b;
+    --box-shadow: rgba(0, 0, 0, 0.05);
+}
+
+#menuleft,
+#menuRight {
+}
+#menuleft .card .list-group-item {
+    background-color: var(--white);
+    color: var(--colortext);
+}
+#menuleft .card .card-header a {
+    background-color: var(--gray);
+    color: var(--colortextprimary);
+    border-radius: 0 !important;
+}
+#menuleft .card {
+    box-shadow: 0 10px 20px 0 var(--box-shadow);
+}
+.card-header {
+    background-color: var(--gray);
+    color: var(--colortextprimary);
+    border-radius: 0 !important;
+}
+#menuRight .card-body {
+    background-color: var(--white);
+    color: var(--colortext);
+}
+#menuRight .card-body label {
+    color: var(--colortext);
+}
+
+#menuRight .card-body .table-hover > tbody > tr {
+    color: var(--colortext);
+}
+#menuRight .card-body .form-outline .form-label {
+    color: var(--colortext);
+}
+#menuRight .card-body .form-outline input {
+    color: var(--colortext);
+}
+#menuRight .card-body .table-hover {
+    border: 1px solid #636974;
+}
+/*
+* 	CATEGORY
+*/
+.cat-item {
+    border: 1px solid;
+    width: 100%;
+    margin: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    position: relative;
+    animation-name: item;
+    animation-duration: 0.4s;
+    display: inline-block;
+    text-align: left;
+    animation-fill-mode: backwards;
+}
+
+.cat-item-left {
+    background-size: cover;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.cat-img-left {
+    height: 100%;
+}
+.cat-item-right {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+    height: 80px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+/*
+* 	TYPE
+*/
+.type-item {
+    border: 1px solid;
+    width: 100%;
+    margin: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    position: relative;
+    animation-name: item;
+    animation-duration: 0.4s;
+    display: inline-block;
+    text-align: left;
+    animation-fill-mode: backwards;
+}
+
+.type-item-left {
+    background-size: cover;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.type-img-left {
+    height: 100%;
+}
+.type-item-right {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+    height: 50px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+/*
+* 	POST
+*/
+.post-item {
+    border: 1px solid;
+    width: 100%;
+    margin: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    position: relative;
+    animation-name: item;
+    animation-duration: 0.4s;
+    display: inline-block;
+    text-align: left;
+    animation-fill-mode: backwards;
+}
+
+.post-item-left {
+    background-size: cover;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    overflow: hidden;
+    height: 80px;
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.post-img-left {
+    height: 100%;
+}
+.post-item-right {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+    height: 80px;
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+/*
+* 	File
+*/
+.file-item {
+    border: 1px solid rgba(158, 158, 158, 0.5);
+    width: 100%;
+    margin: 8px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    position: relative;
+    animation-name: item;
+    animation-duration: 0.4s;
+    display: inline-block;
+    text-align: left;
+    animation-fill-mode: backwards;
+}
+.file-item-top {
+    border-bottom: 1px solid rgba(158, 158, 158, 0.5);
+    background-size: cover;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    height: 100px;
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.file-img-top {
+    height: 100%;
+}
+.file-item-bottom {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    overflow: hidden;
+    height: 60px;
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.sticky-top-right {
+    position: absolute;
+    left: auto;
+    top: -10px;
+    right: -10px;
+    clear: both;
+}

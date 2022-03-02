@@ -1,0 +1,26 @@
+.file-ql-item{
+    position: relative;
+    .dowload{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transform: skew(0);
+        transition: all 0.5s;
+        p{
+            text-align: center;
+            margin-top: 40%;
+            font-weight: 600;
+            color: white;
+        }
+    }
+    &:hover{
+        .dowload{
+            transform: skew(100);
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+@import './container/footer';
+
+@import './page/homepage';
+@import './page/login';
+
+@import './container/nav-bar';
+@import './mixin/background';
+@import './mixin/dowload';
+@import'./container/notification';
+@import './container/baiviet';
+@import './container/post';
+
+@import './mixin/slider';
+@import './mixin/donggoptailieu';
+@import './page/pagenotfound';
+@import './mixin/login';
+@import './mixin/file';
+@import './container/role';
+
+.dropdown-menu{
+    border-radius: 2px!important;
+}
+@media (max-width: 655px) { 
+    .container.responsive{
+        overflow: auto;
+    }
+    
+}

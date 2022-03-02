@@ -1,0 +1,38 @@
+.slider{
+    .carousel-control-next{
+        &:hover{
+            background-image: linear-gradient(to right, rgba(95, 75, 139, 0), rgb(95, 75, 139));
+        }
+    }
+    .carousel-control-prev{
+        &:hover{
+            background-image: linear-gradient(to left, rgba(95, 75, 139, 0), rgb(95, 75, 139));
+        }
+    }
+    #carouselExampleControlsHomepage{
+        .carousel-inner{
+            a{
+                .backgroudslider{
+                    height: 400px;
+                    background-position: left;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 655px) { 
+    .slider{
+        #carouselExampleControlsHomepage{
+            .carousel-inner{
+                a{
+                    .backgroudslider{
+                        height: 160px;
+                    }
+                }
+            }
+        }
+    }
+}
