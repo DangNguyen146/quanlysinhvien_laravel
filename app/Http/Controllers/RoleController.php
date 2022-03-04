@@ -30,8 +30,7 @@ class RoleController extends Controller
         $permissions = Permission::all();
         return view('admin.role.create', compact('permissions'));
     }
-    public function store(RoleAddRequest $request){
-        
+    public function store(Request $request){
         try {
             DB::beginTransaction();
             // Insert data to role table
@@ -89,10 +88,13 @@ class RoleController extends Controller
             $role->delete($id);
 
             $role->permissions()->detach();       //xóa bản ghi thích hợp
-            return response()->json([
-                'code'=>200,
-                'message'=>'success'
-            ],200);
+            $thongbao = json_encode([
+                'url' => '/quanly/roles/',
+                'title' => "Xóa thành công",
+                'status'=>'success',
+                'message' => '<h3>Thành công!</h3><p class="mb-0">Role đã được xóa!</p>',
+        ]);
+            return redirect('/quanly/roles/')->with('thongbao', $thongbao);
 
         }catch(\Exception $exception){
             Log::error("Message: " . $exception->getMessage() . "Line: ". $exception->getLine());

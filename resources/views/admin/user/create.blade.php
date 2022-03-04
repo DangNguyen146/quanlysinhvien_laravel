@@ -52,6 +52,15 @@
                                 <label class="form-label" for="password_confirmation">Re-password</label>
                             </div>
 
+                            <div class="@error('phone') is-invalid @enderror form-outline mb-3">
+                                <input type="text" name="phone" class="form-control" equired autocomplete="phone"
+                                    value="{{old('phone')}}" />
+                                <label class="form-label" for="phone">phone</label>
+                            </div>
+                            @error('phone')
+                            <div class="text-danger pb-1 mb-2">{{ $message }}</div>
+                            @enderror
+
                         </div>
                     </div>
                 </div>

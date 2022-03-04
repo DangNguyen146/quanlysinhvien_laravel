@@ -8,7 +8,7 @@
     <div class="col-md-12 container-fluid">
         <div class="row ms-0 me-0 w-100">
             <div class="col-md-12 border-primary">
-                <form action="{{route('ql_roles.store')}}" method="POST">
+                <form action="{{route('ql_roles.store')}}" method="POST" enctype="multipart/form-data">
                     <div class="card border-primary mb-2">
                         <div class="card-header bg-light">
                             <h4>Quản lý phân quyền</h4>

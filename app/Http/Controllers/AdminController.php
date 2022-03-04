@@ -26,14 +26,18 @@ class AdminController extends Controller
         $roles = Role::all();
         return view('admin.user.create', compact('roles'));
     }
-    public function store(UserPostRequest $request){
+    public function store(Request $request){
+        // dd($request);
         try {
             DB::beginTransaction();
             $userCreat =User::create([
+                'name' => $request->name,
                 'username' => $request->username,
-                'name'=>$request->name,
                 'email'=>$request->email,
                 'password'=>Hash::make($request->password),
+                'phone'=>$request->phone,
+                'created_at' => date('Y-m-d H:i:s',time()),
+                'updated_at' => date('Y-m-d H:i:s',time()),
             ]);
             if($request->roles)
                 $userCreat->assignRole($request->roles);

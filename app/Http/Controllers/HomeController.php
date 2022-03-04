@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Posts;
 use App\Models\Challenge;
+use App\Models\User;
 
 class HomeController extends Controller
 {
@@ -27,7 +28,8 @@ class HomeController extends Controller
     {
         $posts = Posts::where('status', 1)->orderBy('updated_at', 'desc')->get();
         $chall = Challenge::where('status', 1)->orderBy('updated_at', 'desc')->get();
-        
-        return view('home', compact('posts', 'chall'));
+        $listUser = User::all();
+
+        return view('home', compact('posts', 'chall', 'listUser'));
     }
 }
